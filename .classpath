@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry including="graphVis/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="lib" path="C:/Users/jgcaf/processing-3.5.4/core/library/core.jar"/>
-	<classpathentry kind="lib" path="C:/Users/jgcaf/controlP5/library/controlP5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/jgcaf/Documents/Processing/libraries/sound/library/sound.jar"/>
-	<classpathentry kind="lib" path="C:/Users/jgcaf/Documents/Processing/libraries/sound/library/jsyn-20171016.jar"/>
-	<classpathentry kind="lib" path="C:/Users/jgcaf/Documents/Processing/libraries/sound/library/javamp3-1.0.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/jgcaf/processing-3.5.4/core/library/core.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/jgcaf/controlP5/library/controlP5.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/jgcaf/Documents/Processing/libraries/sound/library/sound.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/jgcaf/Documents/Processing/libraries/sound/library/jsyn-20171016.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/jgcaf/Documents/Processing/libraries/sound/library/javamp3-1.0.4.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
