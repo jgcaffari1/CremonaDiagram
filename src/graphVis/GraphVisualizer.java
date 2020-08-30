@@ -551,7 +551,7 @@ public class GraphVisualizer extends PApplet {
 		// if mouse is over this element, then remove it from the queue:
 		if (m.mouseIsOver()) {
 			mouseOver = m;
-			// save any clicked mover
+			// save any clicked mover if shift is held: 
 			saveMoverSequential(m);
 		} else {
 			mouseOver = null;
@@ -593,6 +593,10 @@ public class GraphVisualizer extends PApplet {
 	 */
 	@Override
 	public void keyPressed() {
+		if(keyPressed && keyCode == SHIFT) {
+			//clear keys by pressing the shift key
+			clearSaved();
+		}
 		switch (key) {
 		case ('q'): {
 			// quit application:

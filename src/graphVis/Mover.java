@@ -10,12 +10,11 @@ import processing.sound.*;
 
 /**
  * class for generating a simple shpape for physics simulations.
- * 
+ * Created using concepts from The Nature of Code.  
  * @author jgcaf
  */
 public class Mover {
 
-	private final double G = 6.77;
 	private final double k = 0.02;
 	double radius = 15;
 	private double diameter = 2 * radius;
@@ -375,25 +374,6 @@ public class Mover {
 	 */
 	public double getRadius() {
 		return radius;
-	}
-
-	/**
-	 * exerts a gravity like force on all other objects.
-	 * 
-	 * @param m - the other mover.
-	 */
-	public void pull(Mover m) {
-		double m2 = m.getMass();
-		Vector rHat = Vector.sub(location, m.location);
-		double r = rHat.mag();
-		// set the maximum force to be the force at the surface of each object:
-		if (r <= radius) {
-			r = radius;
-		}
-		rHat.normalize();
-		double Fg = (G * mass * m2) / (Math.pow(r, 2));
-		rHat.scale(Fg);
-		m.applyForce(rHat);
 	}
 
 	/**
