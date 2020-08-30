@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 /**
  * a vertex for storing key value pairs in a graph
  * 
- * @author jgcaf
+ * @author joe caffarini
  * @param <K> - the key data type
  * @param <V> - the value data type
  */

@@ -1,7 +1,6 @@
 /**
- * graph visualizer by joe caffarini 8/2020 - quarantine is still happening. images from:
- * https://unsplash.com/s/photos/web
- * https://elumina.me/wp-content/uploads/2017/06/elumina-freebies-3-free-line-art-pattern-science-fabricio-marques-1.jpg
+ * graph visualizer created by Joe Caffarini 8/2020 - during quarantine.
+ * 
  */
 
 package graphVis;
@@ -22,7 +21,7 @@ import processing.core.PImage;
  * graph visualizer class - creates a gui for displaying and interacting with
  * the graph data. structure.
  * 
- * @author jgcaf
+ * @author joe caffarini
  */
 public class GraphVisualizer extends PApplet {
 	final static int MAX_X = 600;
@@ -44,7 +43,6 @@ public class GraphVisualizer extends PApplet {
 	int myColorBackground = color(255, 255, 255);
 	ControlP5 cp5;
 	String textValue = "";
-	PImage bg;
 	String[] textTargets;
 	List<String> buttonList;
 
@@ -78,7 +76,6 @@ public class GraphVisualizer extends PApplet {
 		// items:
 		if (!reset) {
 			cp5 = new ControlP5(this);
-			bg = loadImage("lineArt2.jpg");
 			initializeStructures();
 			frameRate(SPEED);
 			background(myColorBackground);
@@ -159,7 +156,8 @@ public class GraphVisualizer extends PApplet {
 	@Override
 	public void draw() {
 		background(myColorBackground);
-		image(bg, 0, 0, GUI_X, MAX_Y);
+		fill(0);
+		rect(0, 0, GUI_X, MAX_Y);
 
 		// display the spanning tree if one was created:
 		if (displaySpanning) {

@@ -3,7 +3,7 @@ package graphVis;
 /**
  * class for specifying an edge between two vertexes in the graph
  * 
- * @author jgcaf
+ * @author joe caffarini
  * @param <K> - the comparable key data type
  * @param <V> - the value data type.
  */

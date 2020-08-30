@@ -1,14 +1,5 @@
 package graphVis;
 
-/**
- * sources: https://javatutorial.net/graphs-java-example NOTE - the searches are called searches
- * because they are really checking that there is apath between two different nodes, which is more
- * advanced than simply checking for an edge between the two.
- * https://docs.oracle.com/middleware/11119/jdev/api-reference-esdk/javax/ide/util/Graph.html -
- * ultimately, need the same methods as in java's implementation - need to make this class iterable
- * - instead of repeating the hash table code. make edges iterable? The hash table implementaion
- * complicates things.
- */
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -18,9 +9,9 @@ import java.util.PriorityQueue;
 import java.util.Stack;
 
 /***
- * graph implementation
+ * a graph implementation
  * 
- * @author jgcaf
+ * @author joe caffarini
  * @param <K>
  * @param <V>
  */

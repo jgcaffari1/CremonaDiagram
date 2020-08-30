@@ -1,5 +1,5 @@
 /**
- * This is based off of the nature of code's PVector class.
+ * This was created as an exercise from the Nature of Code: https://creativecommons.org/licenses/by-nc/3.0/
  */
 
 package graphVis;

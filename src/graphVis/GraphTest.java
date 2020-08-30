@@ -11,6 +11,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 
+/***
+ * class for testing the graph algorithms. 
+ * @author joe caffarini
+ *
+ */
 public class GraphTest {
 	Graph<Integer, String> g;
 
@@ -30,8 +35,6 @@ public class GraphTest {
 	public void tearDown() throws Exception {
 
 	}
-
-	// TODO use physics to separate the vertexes - make edges like rubber bands
 
 	@Test
 	public void Test00_basic_insert_removal() {

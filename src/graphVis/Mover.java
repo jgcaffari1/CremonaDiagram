@@ -1,3 +1,7 @@
+/**
+ * This was created as an exercise from the Nature of Code: https://creativecommons.org/licenses/by-nc/3.0/
+ */
+
 package graphVis;
 
 import java.util.Enumeration;
@@ -9,9 +13,9 @@ import processing.core.PConstants;
 import processing.sound.*;
 
 /**
- * class for generating a simple shpape for physics simulations.
- * Created using concepts from The Nature of Code.  
- * @author jgcaf
+ * Class for generating a simple shape for physics simulations.
+ 
+ * @author joe caffarini
  */
 public class Mover {
 
