@@ -15,7 +15,6 @@ import controlP5.ControlP5;
 import controlP5.Textarea;
 import controlP5.Textfield;
 import processing.core.PApplet;
-import processing.core.PImage;
 
 /**
  * graph visualizer class - creates a gui for displaying and interacting with
