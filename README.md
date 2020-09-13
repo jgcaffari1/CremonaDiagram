@@ -10,7 +10,7 @@ Maxwell-Cremona Diagrams (also known as Reciporical Force Diagrams) were origina
    ![Pierre Varignon Drawings](/GIFS/reciporicalForceVari.png)  
     __Figure 1__: Varignon's Reciporical Force Diagrams (Erickson).  Images depict a network of ropes tied under tension. I reccomend reading Erickson's open source book for mor information.    
 
-Maxwell-Cremona diagrams are an active area of research, and are used in the present day to model internal stresses from a structure (Block et al).  This model is meant to be more dynamic than traditional Maxwell-Cremona diagrams, and instead models a complex, dampened spring system.  However, the same general shapes can be created. 
+Maxwell-Cremona diagrams are an active area of research, and are used in the present day to model internal stresses from a structure (Block et al, Baker et al.).  This model is meant to be more dynamic than traditional Maxwell-Cremona diagrams, and instead models a complex, dampened spring system.  However, the same general shapes can be created. 
 
    __A)__  
      ![ChallengeImages_A](/GIFS/challengeImage1.png)  
@@ -53,7 +53,7 @@ Maxwell-Cremona diagrams are an active area of research, and are used in the pre
 
 * Pressing "e" with a selected Node will delete it, and all its associated edges.  
 
- ![Delete Nodes](/GIFS/deleteNode.gif) 
+  ![Delete Nodes](/GIFS/deleteNode.gif) 
  
 * The Edges act as springs, and can generate soud by pressing "k", the sounds can be turned off with "o". 
 
@@ -65,7 +65,7 @@ Maxwell-Cremona diagrams are an active area of research, and are used in the pre
 
 * Display different spanning trees from a dropdown menu. press "l" to return to the original diagram.  
 
- ![Spanning Trees](/GIFS/spanningTrees.gif) 
+  ![Spanning Trees](/GIFS/spanningTrees.gif) 
 
 * All the keyboard shortcuts are within a scrolling text box underneath the buttons.  
 
