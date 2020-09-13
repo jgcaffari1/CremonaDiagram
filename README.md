@@ -2,6 +2,8 @@
  A simple program for creating a zero gravity Cremona Diagram.  
  
  Download the package and click on the .jar file to run the program.  If you have a suggestion on another algorithm to visualize, let me know.  
+ 
+by Joe Caffarini, Summer 2020.  
 
 ## Background
 
