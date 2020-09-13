@@ -77,7 +77,7 @@ Maxwell-Cremona diagrams are an active area of research, and are used in the pre
 
 ## Works Cited  
 
-Andreas Schlegel, . (2015, March 24). ControlP5, a GUI library for the programming environment Processing (Version v2.2.4). Zenodo. http://doi.org/10.5281/zenodo.16290
+Schlegel, A. (2015, March 24). ControlP5, a GUI library for the programming environment Processing (Version v2.2.4). Zenodo. http://doi.org/10.5281/zenodo.16290
 
 Baker, W. F., Beghini, L. L., Mazurek, A., Carrion, J., & Beghini, A. (2013). Maxwell’s reciprocal diagrams and discrete Michell frames. Structural and multidisciplinary    optimization, 48(2), 267-277.
 
