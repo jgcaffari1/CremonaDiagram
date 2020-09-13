@@ -7,7 +7,7 @@
 
 * Press "n", or the "ADD BALL" Button to insert new Nodes.  
 
- ![Add New Node](/GIFS/AddNode.gif) 
+  ![Add New Node](/GIFS/AddNode.gif) 
 
 * Click on the nodes to select them, once selected they can be connected with either a directed, or undirected edge:
    * "CON START -> END" or press "s" will create a directed edge.  
