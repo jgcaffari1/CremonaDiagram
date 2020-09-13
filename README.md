@@ -12,10 +12,10 @@ Maxwell-Cremona Diagrams (also known as Reciporical Force Diagrams) were origina
 
 Maxwell-Cremona diagrams are an active area of research, and are used in the present day to model internal stresses from a structure (Block et al).  This model is meant to be more dynamic than traditional Maxwell-Cremona diagrams, and instead models a complex, dampened spring system.  However, the same general shapes can be created. 
 
-  ![ChallengeImages_A](/GIFS/challengeImage1.png)
-  ![ChallengeImages_B](/GIFS/challengeImage2.png)  
-  ![ChallengeImages_C](/GIFS/challengeImage3.png) 
-   __Figure 2__: Reciporical Force Diagrams from Baker et al. These are a few suggestions for diagrams to attempt making.  I also reccomend reading the cited papers to learn   more.  
+   __A)__![ChallengeImages_A](/GIFS/challengeImage1.png)
+   __B)__![ChallengeImages_B](/GIFS/challengeImage2.png)  
+   __C)__![ChallengeImages_C](/GIFS/challengeImage3.png) 
+   __Figure 2 (A-C)__: Reciporical Force Diagrams from Baker et al. These are a few suggestions for diagrams to attempt making.  
 
 
 
