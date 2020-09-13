@@ -1,5 +1,5 @@
 # Maxwell-Cremona Diagram Visualizer
- A simple program for creating a zero gravity Cremona Diagram.  
+ A simple program for creating an interactive Reciporical Force Diagram.  
  
  Download the package and click on the .jar file to run the program.  If you have a suggestion on another algorithm to visualize, let me know.  
  
