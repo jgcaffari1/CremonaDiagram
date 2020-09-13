@@ -18,7 +18,7 @@ Maxwell-Cremona diagrams are an active area of research, and are used in the pre
      ![ChallengeImages_B](/GIFS/challengeImage2.png)  
    __C)__  
      ![ChallengeImages_C](/GIFS/challengeImage3.png)  
-   __Figure 2 (A-C)__: Reciporical Force Diagrams from Baker et al. These are a few suggestions for diagrams to attempt making.  
+   __Figure 2 (A-C)__: Reciporical Force Diagrams from Baker et al. These are a few suggestions for diagrams to attempt making with this application.  
 
 
 
