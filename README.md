@@ -3,7 +3,11 @@
  
  Download the package and click on the .jar file to run the program.  If you have a suggestion on another algorithm to visualize, let me know.  
  
-by Joe Caffarini, Summer 2020.  
+by Joe Caffarini, Summer 2020.
+
+Cite this project:   
+[![DOI](https://zenodo.org/badge/289769021.svg)](https://zenodo.org/badge/latestdoi/289769021)
+
 
 ## Background
 
