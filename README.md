@@ -1,7 +1,23 @@
-# GraphVisualizer
+# Cremona Diagram Visualizer
  A simple program for creating a zero gravity Cremona Diagram.  This graph implementation also contains some basic graph algorithms.  
  
  Download the package and click on the .jar file to run the program.  If you have a suggestion on another algorithm to visualize, let me know.  
+
+## Background
+
+Maxwell-Cremona Diagrams (also known as Reciporical Force Diagrams) were originally developed by the mathematician Pierre Varignon, as a way of finding the equilibrium of ropes under tension.  Pierre Varignon refered to his work as "Graphical Statics", and it was not published in detail until after his death in 1725.  It wasn't until much later that   James Clerk Maxwell and Luigi Cremona developed a more detailed theory of Reciporical Force Diagrams in the 1800s.  
+
+  ![Pierre Varignon Drawings](/GIFS/reciporicalForceVari.png)  
+   __Figure 1__: Varignon's Reciporical Force Diagrams (Erickson).  Images depict a network of ropes tied under tension, this program creates a dynamic instance of this diagram,    but with springs instead of ropes.  
+
+Maxwell-Cremona diagrams are an active area of research, and are used in the present day to model internal stresses from a structure (Block et al).  This model is meant to be more dynamic than traditional Maxwell-Cremona diagrams, and instead models a complex, dampened spring system.  However, the same general shapes can be created. 
+
+![ChallengeImages_A](/GIFS/challengeImage1.png)
+![ChallengeImages_B](/GIFS/challengeImage2.png) 
+![ChallengeImages_C](/GIFS/challengeImage2.png) 
+   __Figure 2__: Reciporical Force Diagrams from Baker et al. These are a few suggestions for diagrams to attempt making.  I also reccomend reading the cited papers to learn   more.  
+
+
 
 ## Controls  
 
@@ -50,9 +66,17 @@
 
 * All the keyboard shortcuts are within a scrolling text box underneath the buttons.  
 
-## Works Cited
+## Works Cited  
+
+Andreas Schlegel, . (2015, March 24). ControlP5, a GUI library for the programming environment Processing (Version v2.2.4). Zenodo. http://doi.org/10.5281/zenodo.16290
+
+Baker, W. F., Beghini, L. L., Mazurek, A., Carrion, J., & Beghini, A. (2013). Maxwell’s reciprocal diagrams and discrete Michell frames. Structural and multidisciplinary    optimization, 48(2), 267-277.
+
+Block, P., Fivet, C., & Van Mele, T. (2016). Reciprocal diagrams: Innovative applications of past theories. International Journal of Space Structures, 31(2–4), 84–84. https://doi.org/10.1177/0266351116660789
+
+Erickson, J. (1999). Algorithms.
 
 Shiffman, D. (2012). The nature of code: Simulating natural systems with processing. Nature of Code.  
 
-Andreas Schlegel, . (2015, March 24). ControlP5, a GUI library for the programming environment Processing (Version v2.2.4). Zenodo. http://doi.org/10.5281/zenodo.16290
+
 
