@@ -8,7 +8,7 @@
 Maxwell-Cremona Diagrams (also known as Reciporical Force Diagrams) were originally developed by the mathematician Pierre Varignon, as a way of finding the equilibrium of ropes under tension.  Pierre Varignon refered to his work as "Graphical Statics", and it was not published in detail until after his death in 1725.  It wasn't until much later that   James Clerk Maxwell and Luigi Cremona developed a more detailed theory of Reciporical Force Diagrams in the 1800s.  
 
    ![Pierre Varignon Drawings](/GIFS/reciporicalForceVari.png)  
-    __Figure 1__: Varignon's Reciporical Force Diagrams (Erickson).  Images depict a network of ropes tied under tension, this program creates a dynamic instance of this   diagram,    but with springs instead of ropes.  
+    __Figure 1__: Varignon's Reciporical Force Diagrams (Erickson).  Images depict a network of ropes tied under tension. I reccomend reading Erickson's open source book for mor information.    
 
 Maxwell-Cremona diagrams are an active area of research, and are used in the present day to model internal stresses from a structure (Block et al).  This model is meant to be more dynamic than traditional Maxwell-Cremona diagrams, and instead models a complex, dampened spring system.  However, the same general shapes can be created. 
 
