@@ -1,7 +1,5 @@
 /**
- * graph visualizer by joe caffarini 8/2020 - quarantine is still happening. images from:
- * https://unsplash.com/s/photos/web
- * https://elumina.me/wp-content/uploads/2017/06/elumina-freebies-3-free-line-art-pattern-science-fabricio-marques-1.jpg
+ * graph visualizer by joe caffarini 8/2020 - quarantine is still happening.  
  */
 
 package graphVis;
