@@ -6,5 +6,6 @@ module GraphVisualizer {
 	requires jsyn;
 	requires junit;
 	requires org.junit.jupiter.api;
+	requires java.sql;
 	requires sound;
 }

@@ -108,7 +108,6 @@ public class Mover {
 	public void simpleHarmonicMotionFrequency(double k, double drag, Integer key, Vector velocityTarg) {
 		if (!soundOn) {
 			Vector relativeVelocity;
-			// w = sqrt(k/m) = 2pif:
 			// calculate the resonant frequency:
 			double wo = Math.sqrt(k / mass);
 			// calculate the damping ratio:

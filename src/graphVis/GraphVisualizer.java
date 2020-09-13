@@ -1,5 +1,5 @@
 /**
- * graph visualizer by joe caffarini 8/2020 - quarantine is still happening.  
+ * graph visualizer by joe caffarini 8/2020 - During Quarantine.  
  */
 
 package graphVis;
@@ -76,7 +76,6 @@ public class GraphVisualizer extends PApplet {
 		// items:
 		if (!reset) {
 			cp5 = new ControlP5(this);
-			bg = loadImage("lineArt2.jpg");
 			initializeStructures();
 			frameRate(SPEED);
 			background(myColorBackground);
@@ -106,7 +105,7 @@ public class GraphVisualizer extends PApplet {
 				+ " z - unselect all vertexes\n" + " a - add undirected edge\n"
 				+ " s - add directed edge start-> finish\n" + " t - delete edge\n"
 				+ " y - delete directed edge start -> finish\n" + " l - reset spanning tree/ display main graph\n"
-				+ " k - turn sound on\n" + " o - turn sound off\n");
+				+ " k - turn sound off\n" + " o - turn sound on\n");
 
 	}
 
@@ -157,7 +156,9 @@ public class GraphVisualizer extends PApplet {
 	@Override
 	public void draw() {
 		background(myColorBackground);
-		image(bg, 0, 0, GUI_X, MAX_Y);
+		//fill button background:
+		fill(0);
+		rect( 0, 0, GUI_X, MAX_Y);
 
 		// display the spanning tree if one was created:
 		if (displaySpanning) {
@@ -664,13 +665,13 @@ public class GraphVisualizer extends PApplet {
 			displaySpanning = false;
 			break;
 		}
-		case ('k'): {// turn sound on
+		case ('k'): {// turn sound off
 			for (int i : startVertexes) {
 				gMain.get(i).soundOn = true;
 			}
 			break;
 		}
-		case ('o'): {// turn sound off
+		case ('o'): {// turn sound on
 			for (int i : startVertexes) {
 				gMain.get(i).soundOn = false;
 			}
