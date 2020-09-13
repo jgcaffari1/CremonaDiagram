@@ -1,6 +1,5 @@
 /**
- * graph visualizer created by Joe Caffarini 8/2020 - during quarantine.
- * 
+ * graph visualizer by joe caffarini 8/2020 - During Quarantine.
  */
 
 package graphVis;
@@ -19,7 +18,7 @@ import processing.core.PApplet;
 /**
  * graph visualizer class - creates a gui for displaying and interacting with
  * the graph data. structure.
- * 
+ *
  * @author joe caffarini
  */
 public class GraphVisualizer extends PApplet {
@@ -104,7 +103,7 @@ public class GraphVisualizer extends PApplet {
 				+ " z - unselect all vertexes\n" + " a - add undirected edge\n"
 				+ " s - add directed edge start-> finish\n" + " t - delete edge\n"
 				+ " y - delete directed edge start -> finish\n" + " l - reset spanning tree/ display main graph\n"
-				+ " k - turn sound on\n" + " o - turn sound off\n");
+				+ " k - turn sound off\n" + " o - turn sound on\n");
 
 	}
 
@@ -133,7 +132,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * main method for starting applet.
-	 * 
+	 *
 	 * @param args
 	 */
 	public static void main(java.lang.String[] args) {
@@ -181,7 +180,7 @@ public class GraphVisualizer extends PApplet {
 	/**
 	 * Forms or Changes an undirected edge between the vertexes with the specified
 	 * id numbers
-	 * 
+	 *
 	 * @param start  - the id of the starting vertex
 	 * @param end    - the id of the ending vertex.
 	 * @param weight - the weight of the edge.
@@ -198,7 +197,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * creates a directed edge from start to end with the specified weight.
-	 * 
+	 *
 	 * @param start  - id of the starting vertex
 	 * @param end    - id of the ending vertex
 	 * @param weight - the weight of the edge.
@@ -215,7 +214,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * removes the edge betwen the specified vertexes
-	 * 
+	 *
 	 * @param start - the id of the starting vertex
 	 * @param end   - the id of the ending vertex.
 	 */
@@ -230,7 +229,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * removes the vertex from the graph
-	 * 
+	 *
 	 * @param target - the id of the vertex being removed.
 	 */
 	private void removeVertex(int target) {
@@ -343,7 +342,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * draws the edges from the graph:
-	 * 
+	 *
 	 * @param g - the current graph
 	 */
 	private void drawEdges(Graph<Integer, Mover> g) {
@@ -361,7 +360,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * checks if the mouse is over an edge:
-	 * 
+	 *
 	 * @param c - the edge being checked
 	 * @return - true if the mouse is over the edge, false otherwise.
 	 */
@@ -395,7 +394,7 @@ public class GraphVisualizer extends PApplet {
 	/**
 	 * allows the user to select the two vertexes at the ends of the an edge with
 	 * the mouse.
-	 * 
+	 *
 	 * @param c - the selected edge
 	 */
 	public void selectEndsOfEdge(Edge<Integer, Mover> c) {
@@ -420,7 +419,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * draws an edge
-	 * 
+	 *
 	 * @param c - the edge being drawn.
 	 */
 	private void drawEdge(Edge<Integer, Mover> c) {
@@ -448,7 +447,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * marks the directionality of the edge on the graph
-	 * 
+	 *
 	 * @param c - the edge being drawn
 	 */
 	private void drawArrow(Edge<Integer, Mover> c) {
@@ -516,7 +515,7 @@ public class GraphVisualizer extends PApplet {
 	/**
 	 * clears the text from the given text box when the user activates it if it
 	 * matches the default text.
-	 * 
+	 *
 	 * @param text        - the text box handle.
 	 * @param startString - the default start text.
 	 */
@@ -548,7 +547,7 @@ public class GraphVisualizer extends PApplet {
 		// if mouse is over this element, then remove it from the queue:
 		if (m.mouseIsOver()) {
 			mouseOver = m;
-			// save any clicked mover if shift is held: 
+			// save any clicked mover if shift is held:
 			saveMoverSequential(m);
 		} else {
 			mouseOver = null;
@@ -663,13 +662,13 @@ public class GraphVisualizer extends PApplet {
 			displaySpanning = false;
 			break;
 		}
-		case ('k'): {// turn sound on
+		case ('k'): {// turn sound off
 			for (int i : startVertexes) {
 				gMain.get(i).soundOn = true;
 			}
 			break;
 		}
-		case ('o'): {// turn sound off
+		case ('o'): {// turn sound on
 			for (int i : startVertexes) {
 				gMain.get(i).soundOn = false;
 			}
@@ -700,7 +699,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * checks if enough vertexes have been selected to form an edge
-	 * 
+	 *
 	 * @return true if 2 vertexes have been selected.
 	 */
 	private boolean canMakeEdge() {
@@ -709,7 +708,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * checks if a specific mover has already been selected
-	 * 
+	 *
 	 * @param m - the mover being checked.
 	 * @return true if the mover was already selected, false otherwise.
 	 */
@@ -724,7 +723,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * saves selects the mover
-	 * 
+	 *
 	 * @param index - the index to where the mover will be saved.
 	 * @param Mover m - the mover being saved/selected.
 	 */
@@ -753,7 +752,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * saves the movers for creating edges in the order tehy were clicked.
-	 * 
+	 *
 	 * @param m - the specified mover.
 	 */
 	private void saveMoverSequential(Mover m) {
@@ -779,7 +778,7 @@ public class GraphVisualizer extends PApplet {
 	/**
 	 * gets the edge value form the text box, if nothing, or an invalid value is
 	 * entered, then it returns 1.00 by default.
-	 * 
+	 *
 	 * @return the current value entered as the edge weight, or 1.00 by default.
 	 */
 	public Double getEdgeValue() {
@@ -797,7 +796,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * gets the id number form the specified text box
-	 * 
+	 *
 	 * @param fieldName - the name of the text box being targeted, should be "start"
 	 *                  or "end"
 	 * @return the id number
@@ -929,7 +928,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * changes the color of a vertex based on its degree in the main graph.
-	 * 
+	 *
 	 * @param id - the id of the vertex changing color.
 	 */
 	private void changeColorBasedOnDegree(int id) {
@@ -944,7 +943,7 @@ public class GraphVisualizer extends PApplet {
 	/**
 	 * checks if there exists an edge going either way between the mouse selected
 	 * vertexes.
-	 * 
+	 *
 	 * @return true if there is an edge, false otherwise.
 	 */
 	private boolean canRemoveEdge() {
@@ -959,7 +958,7 @@ public class GraphVisualizer extends PApplet {
 
 	/**
 	 * resets the text fields with color feedback on the user input.
-	 * 
+	 *
 	 * @param validInput - true to turn test green for valid input formatting, false
 	 *                   to turn text red for invalid input formatting
 	 */
@@ -981,7 +980,7 @@ public class GraphVisualizer extends PApplet {
 	/**
 	 * performs the specific spanning operation on the main graph from the dropdown
 	 * menu.
-	 * 
+	 *
 	 * @param n - the number corresponding to the specific dropdown menu option.
 	 */
 	public void dropdown(int n) {

@@ -10,7 +10,7 @@ import java.util.Stack;
 
 /***
  * a graph implementation
- * 
+ *
  * @author joe caffarini
  * @param <K>
  * @param <V>
@@ -40,7 +40,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * adds a vertex with the given key value pair to the graph
-	 * 
+	 *
 	 * @param key   - the key of the new vertex
 	 * @param value - the value stored in the vertex
 	 */
@@ -56,7 +56,7 @@ public class Graph<K extends Comparable<K>, V> {
 	/**
 	 * adds a new vertex to the graph. If the vertex is already in the graph, then
 	 * the value is copied.
-	 * 
+	 *
 	 * @param vertex
 	 */
 	public void add(Vertex<K, V> vertex) {
@@ -71,7 +71,7 @@ public class Graph<K extends Comparable<K>, V> {
 	/**
 	 * gets the total cost of the current graph. Useful for spanning trees
 	 * algorithms.
-	 * 
+	 *
 	 * @return
 	 */
 	public double getCost() {
@@ -80,7 +80,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * sets the total cost of the edges in the current graph.
-	 * 
+	 *
 	 * @param cost
 	 */
 	public void setCost(double cost) {
@@ -89,7 +89,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * removes the specified vertex, and all edges ending at it.
-	 * 
+	 *
 	 * @param key - the key of the specified vertex.
 	 * @return - true if successful, false if item was not found or removed.
 	 */
@@ -114,7 +114,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * removes edges between the two keys:
-	 * 
+	 *
 	 * @param key - key of the ending vertex being removed.
 	 * @return
 	 */
@@ -124,7 +124,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * removes edges between the two keys:
-	 * 
+	 *
 	 * @param key - key of the ending vertex being removed.
 	 * @return
 	 */
@@ -134,7 +134,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * Adds the directed edge from the start vertex to the end vertex
-	 * 
+	 *
 	 * @param startKey - key for the starting node.
 	 * @param endKey   - key for the ending node.
 	 * @return - false if failure to add edge - meaning the nodes are missing or
@@ -148,7 +148,7 @@ public class Graph<K extends Comparable<K>, V> {
 	/**
 	 * Adds the directed edge from the start vertex to the end vertex. It also
 	 * assigns a non default weight to the edge.
-	 * 
+	 *
 	 * @param startKey - key for the starting node.
 	 * @param endKey   - key for the ending node.
 	 * @param weight   - the weight of the edge
@@ -164,7 +164,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * changs the weight of a given edge.
-	 * 
+	 *
 	 * @param startKey  - the key of the starting vertex of the edge
 	 * @param endKey    - key of the ending vertex of the edge.
 	 * @param newWeight - the new weight of the specified edge.
@@ -176,7 +176,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * gets the weight of the specified edge
-	 * 
+	 *
 	 * @param startKey - the key of the starting vertex of the edge
 	 * @param endKey   - key of the ending vertex of the edge.
 	 * @return - the weight of the specified edge.
@@ -187,7 +187,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * this creates an undirected connection between the two nodes.
-	 * 
+	 *
 	 * @param startKey - key for the starting node.
 	 * @param endKey   - key for the ending node.
 	 * @return - false if failure to add both edges - meaning the vertexes are
@@ -204,7 +204,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * this creates an undirected connection between the two nodes.
-	 * 
+	 *
 	 * @param startKey - key for the starting node.
 	 * @param endKey   - key for the ending node.
 	 * @param weight   - the weight of the edge.
@@ -222,7 +222,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * gets the number of vertexes in the graph
-	 * 
+	 *
 	 * @return the number of vertexes in the graph
 	 */
 	public int getNumberOfVertexes() {
@@ -231,7 +231,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * gets the vertex with the given key
-	 * 
+	 *
 	 * @param key - the key of the vertex being searched for
 	 * @return the vertex with the matching key.
 	 */
@@ -245,7 +245,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * gets the specified vertex from the graph.
-	 * 
+	 *
 	 * @param key - the key of the overlap vertex.
 	 * @return the vertex with the specified keys,
 	 */
@@ -259,7 +259,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * Gets all edges in the graph - meant for testing purposes only.
-	 * 
+	 *
 	 * @return an object containing all edges in the graph.
 	 */
 	public Hashtable<K, Edge<K, V>> getEdges() {
@@ -275,7 +275,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * gets and sorts all edges in a graph.
-	 * 
+	 *
 	 * @param startKey - the key of the vertex to start the graph
 	 * @return a sorted queue of edges.
 	 */
@@ -299,7 +299,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * perform a depth first traversal of the given graph.
-	 * 
+	 *
 	 * @param startKey - the key where the traversal is starting.
 	 * @return the list of vertexes from the dft.
 	 */
@@ -319,7 +319,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * sorts vertexes in increasing order by total weight.
-	 * 
+	 *
 	 * @return - a soted list of vertexes.
 	 */
 	public PriorityQueue<Vertex<K, V>> sortVertexes() {
@@ -335,7 +335,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * performs the work for the depth first traversal.
-	 * 
+	 *
 	 * @param key       - the key of the vertex being visited.
 	 * @param traversal - the list containing the depth first traversal.
 	 */
@@ -368,7 +368,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * checks if an edge exists between the specified vertexes
-	 * 
+	 *
 	 * @param startKey - key of the starting vertex
 	 * @param endKey   - key of the ending vertex
 	 * @return true if an edge exists.
@@ -379,7 +379,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * perform a breadth first traversal of the given graph.
-	 * 
+	 *
 	 * @param startKey - the key where the traversal is starting.
 	 * @return the list of vertexes from the bft, returns null if the starting
 	 *         vertex is not in the graph.
@@ -432,7 +432,7 @@ public class Graph<K extends Comparable<K>, V> {
 	/**
 	 * topologically sorts the given graph this algorithm is from lecture26 for
 	 * cs400
-	 * 
+	 *
 	 * @return array containing the topological sorted vertexes.
 	 */
 	public ArrayList<Vertex<K, V>> topologicalOrdering() {
@@ -477,7 +477,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * perform a breadth first spanning of the given graph.
-	 * 
+	 *
 	 * @param startKey - the key where the traversal is starting.
 	 * @return The spanning graph from the starting node
 	 */
@@ -534,7 +534,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * Dijkstras algorithm for finding the shortest path:
-	 * 
+	 *
 	 * @param startingKey - the key to start the search:
 	 * @return the list containing the vertexes on the shortest path.
 	 */
@@ -603,7 +603,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * generate a depth first spanning graph of the current graph structure.
-	 * 
+	 *
 	 * @param startKey - the key of the vertex from which to start spanning.
 	 * @return - the depth first spanning tree.
 	 */
@@ -623,7 +623,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * helper function for depth first spanning
-	 * 
+	 *
 	 * @param key       - key of the current vertex.
 	 * @param traversal - the list containg all nodes in the traversal.
 	 * @param gMain     - the new graph containing the spanning tree.
@@ -661,7 +661,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * Primms Minimum Spanning Tree algorithm
-	 * 
+	 *
 	 * @param startKey - the key to start at
 	 * @return a graph containing the minimum spanning tree.
 	 */
@@ -714,7 +714,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * forms a minimum spanning tree with kruskal's algorithm
-	 * 
+	 *
 	 * @param startKey - the key to start at
 	 * @return a graph containing the minimum spanning tree. implementation modified
 	 *         from:
@@ -761,7 +761,7 @@ public class Graph<K extends Comparable<K>, V> {
 	/**
 	 * finds the start of a subtree - it should iterate backwards in reverse weight
 	 * order.
-	 * 
+	 *
 	 * @param u - the current vertex being searched.
 	 * @return - the root of the subtre containing the vertex.
 	 */
@@ -775,7 +775,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * Combines the two sets of vertexes into a larger subtree
-	 * 
+	 *
 	 * @param u - the starting vertex of an edge.
 	 * @param v - the ending vertex of an edge.
 	 */
@@ -809,7 +809,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * combines the roots of the two subtrees
-	 * 
+	 *
 	 * @param u - the subtree containing the start vertex of the new edge
 	 * @param v - the subtree containing the end vertex of the new edge.
 	 */
@@ -819,7 +819,7 @@ public class Graph<K extends Comparable<K>, V> {
 
 	/**
 	 * gets the number of vertexes in the graph
-	 * 
+	 *
 	 * @return the number of vertexes.
 	 */
 	public int size() {
