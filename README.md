@@ -1,5 +1,5 @@
 # GraphVisualizer
- A simple program for visualizing graphs and networks
+ A simple program for creating a zero gravity Cremona Diagram.  
 
 
 ## Works Cited
